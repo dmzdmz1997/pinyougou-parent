@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <script src="/js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script>
+        $(function(){
+            $("#ajaxPost").click(function(){
+                $.ajax({
+                    // 请求类型，这里必须为post
+                    type : "post",
+                    // 请求地址
+                    url : "/responseBodyJson",
+                    // 发送给后台的ajax数据
+                    data:'{"id":100,"name":"jack","money":9.9}',
+                    // 后台返回的数据格式
+                    dataType:"json",
+                    // 请求格式与编码
+                    contentType:"application/json;charset=utf-8",
+                    success : function(jsn){
+                        alert("jsn="+jsn+"; jsn.id="+jsn.id+"; jsn.name="+jsn.name+"; jsn.money="+jsn.money);
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+<h2>RequestBody获取请求JSON格式数据 & ResponseBody自动把对象转json并响应</h2>
+<button id="ajaxPost">测试ajax请求json与响应json</button>
+</body>
+</html>
