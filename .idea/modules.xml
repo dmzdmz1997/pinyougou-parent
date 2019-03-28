@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Lucene_test/Lucene_test.iml" filepath="$PROJECT_DIR$/Lucene_test/Lucene_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_security_demo/spring_security_demo.iml" filepath="$PROJECT_DIR$/spring_security_demo/spring_security_demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc01/springmvc01.iml" filepath="$PROJECT_DIR$/springmvc01/springmvc01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc03_02_ssm/springmvc03_02_ssm.iml" filepath="$PROJECT_DIR$/springmvc03_02_ssm/springmvc03_02_ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trav_main/trav_dao/trav_dao.iml" filepath="$PROJECT_DIR$/trav_main/trav_dao/trav_dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trav_main/trav_domain/trav_domain.iml" filepath="$PROJECT_DIR$/trav_main/trav_domain/trav_domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trav_main/trav_main.iml" filepath="$PROJECT_DIR$/trav_main/trav_main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trav_main/trav_service/trav_service.iml" filepath="$PROJECT_DIR$/trav_main/trav_service/trav_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/trav_main/trav_web/trav_web.iml" filepath="$PROJECT_DIR$/trav_main/trav_web/trav_web.iml" />
+    </modules>
+  </component>
+</project>

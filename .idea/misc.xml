@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/spring_security_demo" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc01" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringMVC02" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc03_02_ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/trav_main/trav_web" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/springmvc01/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc03_02_ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/trav_main/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_security_demo/pom.xml" />
+        <option value="$PROJECT_DIR$/Lucene_test/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SvnBranchConfigurationManager">
+    <option name="myConfigurationMap">
+      <map>
+        <entry key="$PROJECT_DIR$/spring_security_demo">
+          <value>
+            <SvnBranchConfiguration>
+              <option name="branchUrls">
+                <list>
+                  <option value="https://dmz:3691/svn/ssmRespository/ssmproject/branches" />
+                  <option value="https://dmz:3691/svn/ssmRespository/ssmproject/tags" />
+                </list>
+              </option>
+              <option name="trunkUrl" value="https://dmz:3691/svn/ssmRespository/ssmproject/trunk" />
+            </SvnBranchConfiguration>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

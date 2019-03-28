@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Lucene_test" />
+        <module name="spring_security_demo" />
+        <module name="springmvc01" />
+        <module name="springmvc03_02_ssm" />
+        <module name="trav_dao" />
+        <module name="trav_domain" />
+        <module name="trav_service" />
+        <module name="trav_web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Lucene_test" target="1.5" />
+      <module name="spring_security_demo" target="1.5" />
+      <module name="springmvc01" target="1.5" />
+      <module name="springmvc03_02_ssm" target="1.5" />
+      <module name="trav_dao" target="1.5" />
+      <module name="trav_domain" target="1.5" />
+      <module name="trav_main" target="1.5" />
+      <module name="trav_service" target="6" />
+      <module name="trav_web" target="6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
