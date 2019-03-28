@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:security="http://www.springframework.org/schema/security"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans>
+    http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <!--1.先指定放行的资源-->
+    <security:http pattern="/login.html" security="none"/>
+    <security:http pattern="/failer.html" security="none"/>
+    <security:http pattern="/favicon.ico" security="none"/>
+
+    <!--2.配置SpringSecurity拦截的资源、登录表单、退出表单、登录失败对应的页面等。-->
+    <security:http auto-config="true" use-expressions="false">
+        <!--2.1 指定拦截的资源，以及要求访问这些资源的用户必须具有ROLE_USER权限。-->
+        <security:intercept-url pattern="/**" access="ROLE_USER"/>
+
+        <!--2.2 配置自定义的登录页面-->
+        <security:form-login login-page="/login.html"
+                             login-processing-url="/login"
+                             username-parameter="username"
+                             password-parameter="password"
+                             default-target-url="/success.html"
+                             authentication-failure-url="/failer.html"
+        />
+
+        <!--2.3 配置退出-->
+        <security:logout
+                logout-url="/logout"
+                logout-success-url="/login.html"
+                invalidate-session="true"
+        />
+
+        <!--2.3 关闭csrf跨域请求-->
+        <security:csrf disabled="true"/>
+
+    </security:http>
+
+    <!--3.认证管理器，配置正确的账号密码，目前先写死。-->
+    <security:authentication-manager>
+        <security:authentication-provider>
+            <security:user-service>
+                <security:user name="qiuqiu" password="{noop}888" authorities="ROLE_USER"/>
+            </security:user-service>
+        </security:authentication-provider>
+    </security:authentication-manager>
+</beans>
